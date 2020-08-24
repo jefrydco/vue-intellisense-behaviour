@@ -1,13 +1,14 @@
 <template>
   <div>
-    {{ fo }}
   </div>
 </template>
 
 <script>
-import * as _ from 'lodash'
+import { cmCamelize } from './index'
 
 export default {
-  props: ['foo', 'bar']
+  mounted() {
+    cmCamelize()
+  }
 }
 </script>
